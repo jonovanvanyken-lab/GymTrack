@@ -4,8 +4,8 @@ A black-and-white gym tracker for machine training. Log sets, reps and weights,
 track personal bests, see which days you trained what, and get workout
 suggestions based on the machines your gym actually has.
 
-It is a single static page, so it runs on GitHub Pages with no build step and
-works offline in the gym once it has been opened.
+It is a static site with no build step, so it runs on GitHub Pages and works
+offline in the gym once it has been opened.
 
 ## What's in here
 
@@ -15,6 +15,7 @@ works offline in the gym once it has been opened.
 | `sw.js` | Saves the app on your phone so it opens without signal |
 | `manifest.webmanifest`, `icon-*.png`, `apple-touch-icon.png` | Lets you add it to your home screen like an app |
 | `jsQR.js` | QR code reader used on iPhone ([jsQR](https://github.com/cozmo/jsQR), Apache 2.0, see `jsQR-LICENSE.txt`) |
+| `three.module.min.js` | 3D engine for the body model ([three.js](https://threejs.org) r170, MIT licence in the file header) |
 
 ## Put it on GitHub Pages
 
@@ -53,12 +54,20 @@ never committed. If the repository is public, the log file is public too.
 
 ## Using it
 
-- **Today**: this week at a glance, today's session, suggested machines with target
-  weights, and a recovery bar for each muscle group.
+- **Today**: this week at a glance and today's session. Under *Train today*, a 3D body
+  shows which muscles are in today's plan. Drag it to turn it, tap muscles to add or
+  remove them, or pick a preset (Push, Pull, Legs and so on). The machine list below
+  updates to match, with target weights. Muscles trained in the last two days get their own shade.
 - **Logging**: scroll the weight stack or use the − / + buttons, set the reps, tap
   *Log set*. The rest timer starts on its own. Tap a logged set to edit or delete it.
   Note seat and pad settings once per machine.
 - **Targets**: when two sets hit the top of the rep range (12 reps for presses and
   rows, 15 for single-joint machines), the next target adds one weight step.
+- **Personal bests**: a new heaviest set, rep record or estimated 1-rep max triggers a
+  full-screen celebration. Tap it to carry on.
+- **Body**: weigh-ins on a sliding scale with a 7-day average trend, goal weight and BMI;
+  tape measurements (chest, waist, hips, arms, thighs and more) with history charts; and
+  fitness, with cardio sessions on machines, weekly minutes against the WHO 150-minute
+  guideline, resting heart rate and VO2 max.
 - **Progress**: training calendar, volume per week, muscle balance and personal bests.
 - **Settings**: rest length, black or white theme, your gym's machines, backups, sample data.

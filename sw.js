@@ -1,6 +1,6 @@
 // Iron Log service worker: keeps the app usable in the gym without signal.
-const VERSION = 'iron-log-v1.0.0';
-const SHELL = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png', './jsQR.js'];
+const VERSION = 'iron-log-v1.1.0';
+const SHELL = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png', './jsQR.js', './three.module.min.js'];
 const FONT_CSS = 'https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap';
 
 self.addEventListener('install', event => {
